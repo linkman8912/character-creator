@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bjn74qwxqa6b3"]
+
+[ext_resource type="PackedScene" uid="uid://bw2mwm643vs1" path="res://CUSTOM CHARACTER FILE.blend" id="1_xn72j"]
+
+[node name="CUSTOM CHARACTER FILE" instance=ExtResource("1_xn72j")]
+
+[node name="BézierCurve_002" parent="Plane_001" index="1"]
+transform = Transform3D(-1.85925, -2.8074e-07, 0, 2.8074e-07, -1.85925, 0, 0, 0, 1.85925, 1.53291, -3.43731, -1.19619)

@@ -1,0 +1,118 @@
+[gd_scene load_steps=20 format=3 uid="uid://d22dwe6ha38u2"]
+
+[ext_resource type="Script" path="res://CharacterBody2D.gd" id="1_8k20u"]
+[ext_resource type="Texture2D" uid="uid://b728bkoj3kbcc" path="res://icon.svg" id="1_tynrt"]
+[ext_resource type="PackedScene" uid="uid://cxgmmwfdl0pul" path="res://animation_thing.tscn" id="3_5t8po"]
+[ext_resource type="Texture2D" uid="uid://bvyjd0jslkco5" path="res://sprite sheets/body+head sheet/body_idle_sprite_sheet.png" id="4_bomyd"]
+[ext_resource type="Texture2D" uid="uid://bgscovmp2wfiq" path="res://sprite sheets/head_idle_sprite_sheet.png" id="4_d3cc1"]
+[ext_resource type="Texture2D" uid="uid://dh5xn6x3sb4ia" path="res://sprite sheets/body+head sheet/body_walk_sprite_sheet.png" id="5_owvyg"]
+[ext_resource type="Texture2D" uid="uid://dj5tmddly0gaq" path="res://sprite sheets/head_walk_sprite_sheet.png" id="5_uci3l"]
+
+[sub_resource type="Animation" id="Animation_2x3me"]
+length = 0.001
+
+[sub_resource type="Animation" id="Animation_1ndu8"]
+resource_name = "r_d walk"
+length = 0.8
+loop_mode = 1
+
+[sub_resource type="Animation" id="Animation_ojltw"]
+resource_name = "down_right"
+length = 0.8
+loop_mode = 1
+
+[sub_resource type="Animation" id="Animation_7rcma"]
+resource_name = "idle_d"
+
+[sub_resource type="Animation" id="Animation_huu3m"]
+resource_name = "idle_d_r"
+
+[sub_resource type="Animation" id="Animation_agoxx"]
+resource_name = "idle_r"
+
+[sub_resource type="Animation" id="Animation_in1lc"]
+resource_name = "idle_u"
+
+[sub_resource type="Animation" id="Animation_prb20"]
+resource_name = "idle_u_r"
+
+[sub_resource type="Animation" id="Animation_4bg2n"]
+resource_name = "r_up walk"
+length = 0.8
+loop_mode = 1
+
+[sub_resource type="Animation" id="Animation_7jjjx"]
+resource_name = "up_l"
+length = 0.8
+loop_mode = 1
+
+[sub_resource type="Animation" id="Animation_2nxeo"]
+resource_name = "up"
+length = 0.8
+loop_mode = 1
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_k5iem"]
+_data = {
+"RESET": SubResource("Animation_2x3me"),
+"down": SubResource("Animation_1ndu8"),
+"down_right": SubResource("Animation_ojltw"),
+"idle_d": SubResource("Animation_7rcma"),
+"idle_d_r": SubResource("Animation_huu3m"),
+"idle_r": SubResource("Animation_agoxx"),
+"idle_u": SubResource("Animation_in1lc"),
+"idle_u_r": SubResource("Animation_prb20"),
+"right": SubResource("Animation_4bg2n"),
+"up": SubResource("Animation_7jjjx"),
+"up_right": SubResource("Animation_2nxeo")
+}
+
+[node name="Node2D" type="Node2D"]
+y_sort_enabled = true
+scale = Vector2(3.63, 3.63)
+
+[node name="WalkcycleNoseColorBrown" type="Sprite2D" parent="."]
+position = Vector2(-2.47934, 3.30579)
+scale = Vector2(5.80019, 5.05553)
+texture = ExtResource("1_tynrt")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+z_index = 1
+y_sort_enabled = true
+scale = Vector2(0.105, 0.105)
+script = ExtResource("1_8k20u")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CharacterBody2D"]
+libraries = {
+"": SubResource("AnimationLibrary_k5iem")
+}
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+zoom = Vector2(3.075, 3.075)
+
+[node name="body_animation" parent="CharacterBody2D" instance=ExtResource("3_5t8po")]
+z_index = 1
+y_sort_enabled = true
+
+[node name="idle_sprite_sheet" parent="CharacterBody2D/body_animation" index="1"]
+texture = ExtResource("4_bomyd")
+
+[node name="walk_sprite_sheet" parent="CharacterBody2D/body_animation" index="2"]
+texture = ExtResource("5_owvyg")
+
+[node name="head_animation" parent="CharacterBody2D" instance=ExtResource("3_5t8po")]
+visible = false
+z_index = 1
+y_sort_enabled = true
+position = Vector2(0, -34.1073)
+scale = Vector2(3.065, 3.065)
+
+[node name="idle_sprite_sheet" parent="CharacterBody2D/head_animation" index="1"]
+position = Vector2(0, 11.595)
+texture = ExtResource("4_d3cc1")
+
+[node name="walk_sprite_sheet" parent="CharacterBody2D/head_animation" index="2"]
+scale = Vector2(0.11, 0.11)
+texture = ExtResource("5_uci3l")
+
+[editable path="CharacterBody2D/body_animation"]
+[editable path="CharacterBody2D/head_animation"]

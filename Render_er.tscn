@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://27t6ypqbtid3"]
+
+[ext_resource type="Script" path="res://Render_er.gd" id="1_8kei0"]
+[ext_resource type="PackedScene" uid="uid://cxafnhuai5pwv" path="res://head_render.tscn" id="1_rc2g4"]
+[ext_resource type="PackedScene" uid="uid://mjgv0rgxqs3o" path="res://body_render.tscn" id="2_bxc6m"]
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("1_8kei0")
+
+[node name="Node3D" parent="." instance=ExtResource("1_rc2g4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.4026, 0, 0)
+
+[node name="Node3D2" parent="." instance=ExtResource("2_bxc6m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.4665, 0, 0)
+
+[editable path="Node3D"]
+[editable path="Node3D/model/CUSTOM CHARACTER FILE"]
+[editable path="Node3D/model/walking"]
+[editable path="Node3D2"]
+[editable path="Node3D2/model/CUSTOM CHARACTER FILE"]
+[editable path="Node3D2/model/walking"]

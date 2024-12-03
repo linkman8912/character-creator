@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://mjgv0rgxqs3o"]
+
+[ext_resource type="Script" path="res://body_render.gd" id="1_btje0"]
+[ext_resource type="Script" path="res://DirectionalLight3D.gd" id="2_8hd0a"]
+[ext_resource type="PackedScene" uid="uid://bkg7hs2ft0n02" path="res://3D character.tscn" id="3_n0e3m"]
+[ext_resource type="Script" path="res://Camera3D.gd" id="4_3bedd"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_ymylm"]
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("1_btje0")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.59062, 0.80695, 0, -0.80695, 0.59062, -9.53674e-07, 3.10967, 2.3563)
+light_energy = 1.762
+script = ExtResource("2_8hd0a")
+
+[node name="model" type="Node3D" parent="."]
+
+[node name="walking" parent="model" instance=ExtResource("3_n0e3m")]
+
+[node name="cam" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.97237, 0.233445, 0, -0.233445, 0.97237, 0, 0.715, 1.852)
+
+[node name="Camera3D" type="Camera3D" parent="cam"]
+script = ExtResource("4_3bedd")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(10.135, 0, 0, 0, 6.36, 0, 0, 0, 1, 0, 0, -1.93756)
+visible = false
+mesh = SubResource("BoxMesh_ymylm")
+
+[editable path="model/walking"]
+[editable path="model/walking/CanvasLayer/HBoxContainer/Node2D"]
+[editable path="model/walking/CanvasLayer/HBoxContainer/Node2D/mouth_ui"]
+[editable path="model/walking/CanvasLayer/HBoxContainer/Node2D/eye_ui"]
+[editable path="model/walking/CanvasLayer/HBoxContainer/Node2D/eyebrow_ui"]

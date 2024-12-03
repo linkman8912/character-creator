@@ -1,0 +1,18 @@
+# import win10toast
+from win10toast import ToastNotifier
+import sys
+
+def main():
+    args = sys.argv
+    do_it(args[1])
+
+
+# create an object to ToastNotifier class
+n = ToastNotifier()
+def do_it(deez):
+    n.show_toast(" " + deez, "You got notification", duration = 10, 
+    icon_path ="https://media.geeksforgeeks.org/wp-content/uploads/geeks.ico")
+    return "i hate you"
+
+if __name__ == "__main__":
+    main()

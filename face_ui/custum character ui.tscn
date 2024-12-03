@@ -1,0 +1,103 @@
+[gd_scene load_steps=8 format=3 uid="uid://cy4rwl3mkprd"]
+
+[ext_resource type="PackedScene" uid="uid://cyamjp8q2clsv" path="res://face_ui/nose_select.tscn" id="1_3xbv4"]
+[ext_resource type="Script" path="res://face_ui/custum character ui.gd" id="1_x7wn6"]
+[ext_resource type="PackedScene" uid="uid://58urxi1hoy0g" path="res://face_ui/mouth_select.tscn" id="2_cnwgv"]
+[ext_resource type="PackedScene" uid="uid://doe682t65pt6q" path="res://face_ui/eye_select.tscn" id="3_dvyc2"]
+[ext_resource type="PackedScene" uid="uid://dpvu5la03ewsy" path="res://face_ui/eyebrow_select.tscn" id="5_624nt"]
+[ext_resource type="PackedScene" uid="uid://cs3ae4lxurrtb" path="res://face_ui/head_select.tscn" id="6_k67o0"]
+[ext_resource type="PackedScene" uid="uid://btx2xbe12wqd0" path="res://face_ui/difficutly settings.tscn" id="7_qad2w"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_x7wn6")
+
+[node name="mouth" type="Button" parent="."]
+offset_right = 8.0
+offset_bottom = 8.0
+text = "MOUTH
+"
+
+[node name="eyes" type="Button" parent="."]
+offset_left = 2.0
+offset_top = 34.0
+offset_right = 71.0
+offset_bottom = 65.0
+text = "EYES
+"
+
+[node name="nose" type="Button" parent="."]
+offset_top = 68.0
+offset_right = 69.0
+offset_bottom = 99.0
+text = "NOSE
+"
+
+[node name="head" type="Button" parent="."]
+offset_left = 4.0
+offset_top = 103.0
+offset_right = 73.0
+offset_bottom = 134.0
+text = "HEAD
+"
+
+[node name="eyebrow" type="Button" parent="."]
+offset_left = 4.0
+offset_top = 136.0
+offset_right = 73.0
+offset_bottom = 167.0
+text = "EYE_BROW
+"
+
+[node name="skincolor" type="Button" parent="."]
+offset_left = 7.0
+offset_top = 169.0
+offset_right = 110.0
+offset_bottom = 200.0
+text = "SKIN COLOR
+"
+
+[node name="nose_ui" parent="." instance=ExtResource("1_3xbv4")]
+visible = false
+position = Vector2(448, 241)
+scale = Vector2(0.435, 0.435)
+
+[node name="mouth_ui" parent="." instance=ExtResource("2_cnwgv")]
+visible = false
+position = Vector2(448, 241)
+scale = Vector2(0.435, 0.435)
+
+[node name="eye_ui" parent="." instance=ExtResource("3_dvyc2")]
+visible = false
+position = Vector2(448, 241)
+scale = Vector2(0.435, 0.435)
+
+[node name="eyebrow_ui" parent="." instance=ExtResource("5_624nt")]
+visible = false
+position = Vector2(429, 240)
+scale = Vector2(0.435, 0.435)
+
+[node name="head_ui" parent="." instance=ExtResource("6_k67o0")]
+visible = false
+position = Vector2(448, 241)
+scale = Vector2(0.435, 0.435)
+
+[node name="skincolor_ui" parent="." instance=ExtResource("7_qad2w")]
+visible = false
+position = Vector2(448, 241)
+scale = Vector2(0.435, 0.435)
+
+[node name="Button" type="Button" parent="."]
+offset_left = 16.0
+offset_top = 921.0
+offset_right = 89.0
+offset_bottom = 952.0
+scale = Vector2(6.10869, 4.97771)
+text = "Finished"
+
+[connection signal="pressed" from="mouth" to="." method="_on_mouth_pressed"]
+[connection signal="pressed" from="eyes" to="." method="_on_eyes_pressed"]
+[connection signal="pressed" from="nose" to="." method="_on_nose_pressed"]
+[connection signal="pressed" from="head" to="." method="_on_head_pressed"]
+[connection signal="pressed" from="eyebrow" to="." method="_on_eyebrow_pressed"]
+[connection signal="pressed" from="skincolor" to="." method="_on_skincolor_pressed"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
