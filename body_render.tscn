@@ -19,6 +19,111 @@ script = ExtResource("2_8hd0a")
 
 [node name="walking" parent="model" instance=ExtResource("3_n0e3m")]
 
+[node name="0_head" parent="model/walking/rig/Skeleton3D" index="0"]
+transform = Transform3D(-0.0388528, -3.39662e-09, 0, 1.01227e-16, -1.1579e-09, -0.0388528, 3.39662e-09, -0.0388528, 1.1579e-09, 1.74623e-10, 0.685595, 0.0883718)
+
+[node name="0_nose_0" parent="model/walking/rig/Skeleton3D" index="1"]
+transform = Transform3D(-0.466499, 0, -4.07826e-08, 1.21542e-15, 0.466499, -1.39028e-08, 4.07826e-08, -1.39028e-08, -0.466499, -1.06986e-07, 0.64111, 0.221265)
+
+[node name="0_nose_1" parent="model/walking/rig/Skeleton3D" index="2"]
+transform = Transform3D(-0.487052, -4.25794e-08, 0, 1.26896e-15, -1.45153e-08, -0.487052, 4.25794e-08, -0.487052, 1.45153e-08, -6.97324e-08, 0.64111, 0.221265)
+
+[node name="0_nose_2" parent="model/walking/rig/Skeleton3D" index="3"]
+transform = Transform3D(-0.495768, -4.33414e-08, 0, 1.29167e-15, -1.4775e-08, -0.495768, 4.33414e-08, -0.495768, 1.4775e-08, -6.97324e-08, 0.64111, 0.221265)
+
+[node name="0_nose_3" parent="model/walking/rig/Skeleton3D" index="4"]
+transform = Transform3D(-0.534421, -4.67205e-08, 0, 1.39238e-15, -1.5927e-08, -0.534421, 4.67205e-08, -0.534421, 1.5927e-08, -9.95346e-08, 0.638768, 0.224315)
+
+[node name="0_Plane_021" parent="model/walking/rig/Skeleton3D" index="5"]
+transform = Transform3D(-0.0448, 0, -3.91654e-09, 1.16722e-16, 0.0448, -1.33514e-09, 3.91654e-09, -1.33514e-09, -0.0448, -1.27475e-07, 0.745111, -0.0104023)
+
+[node name="BézierCurve" parent="model/walking/rig/Skeleton3D" index="6"]
+transform = Transform3D(0.0589468, -5.15376e-09, 0.000794826, -0.000794825, -1.75691e-09, 0.0589468, -5.1296e-09, -0.0589521, -1.82624e-09, 0.00254454, 0.561679, 0.223512)
+
+[node name="BézierCurve_002" parent="model/walking/rig/Skeleton3D" index="7"]
+transform = Transform3D(0.0876969, 2.09086e-08, 0, -6.23124e-16, 2.61357e-09, -0.0876969, -2.09086e-08, 0.0876969, 2.61357e-09, -0.0649992, 0.723365, 0.221913)
+
+[node name="Circle_001" parent="model/walking/rig/Skeleton3D" index="8"]
+transform = Transform3D(-0.0228875, -2.00089e-09, 0, 5.96311e-17, -6.82101e-10, -0.0188548, 2.00089e-09, -0.0228875, 5.61916e-10, -0.0921398, 0.690461, 0.224866)
+
+[node name="1_head" parent="model/walking/rig/Skeleton3D" index="9"]
+transform = Transform3D(-0.463512, -1.51031e-07, 0, 4.50108e-15, -1.38137e-08, -0.463512, 1.51031e-07, -0.463512, 1.38137e-08, 4.94765e-08, 0.685595, 0.0883718)
+
+[node name="1_nose_0" parent="model/walking/rig/Skeleton3D" index="10"]
+transform = Transform3D(-0.466497, 0, -1.52004e-07, 4.53007e-15, 0.466499, -1.39027e-08, 1.52004e-07, -1.39027e-08, -0.466499, 0.0120131, 0.625725, 0.223954)
+
+[node name="1_nose_1" parent="model/walking/rig/Skeleton3D" index="11"]
+transform = Transform3D(-0.539995, -1.75953e-07, 0, 5.2438e-15, -1.60931e-08, -0.539995, 1.75953e-07, -0.539995, 1.60931e-08, 0.0120132, 0.625725, 0.223954)
+
+[node name="1_nose_2" parent="model/walking/rig/Skeleton3D" index="12"]
+transform = Transform3D(-0.545299, -1.77681e-07, 0, 5.2953e-15, -1.62512e-08, -0.545299, 1.77681e-07, -0.545299, 1.62512e-08, 0.0120133, 0.623383, 0.227004)
+
+[node name="1_nose_3" parent="model/walking/rig/Skeleton3D" index="13"]
+transform = Transform3D(-0.53442, -1.74136e-07, 0, 5.18966e-15, -1.5927e-08, -0.53442, 1.74136e-07, -0.53442, 1.5927e-08, 0.0120131, 0.623383, 0.227004)
+
+[node name="1_headd" parent="model/walking/rig/Skeleton3D" index="14"]
+transform = Transform3D(-0.463512, -1.51031e-07, 0, 4.50108e-15, -1.38137e-08, -0.463512, 1.51031e-07, -0.463512, 1.38137e-08, 4.94765e-08, 0.685595, 0.0883718)
+
+[node name="2_head" parent="model/walking/rig/Skeleton3D" index="15"]
+transform = Transform3D(-0.463512, -1.51031e-07, 0, 4.50108e-15, -1.38137e-08, -0.463512, 1.51031e-07, -0.463512, 1.38137e-08, 4.94765e-08, 0.685595, 0.0883718)
+
+[node name="2_nose_0" parent="model/walking/rig/Skeleton3D" index="16"]
+transform = Transform3D(-0.466497, 0, -1.52005e-07, 4.53007e-15, 0.466499, -1.39027e-08, 1.52004e-07, -1.39027e-08, -0.466499, 9.27785e-08, 0.64111, 0.221265)
+
+[node name="2_nose_1" parent="model/walking/rig/Skeleton3D" index="17"]
+transform = Transform3D(-0.487051, -1.58701e-07, 0, 4.72967e-15, -1.45153e-08, -0.487051, 1.58701e-07, -0.487051, 1.45153e-08, 9.27785e-08, 0.64111, 0.221265)
+
+[node name="2_nose_2" parent="model/walking/rig/Skeleton3D" index="18"]
+transform = Transform3D(-0.587717, -1.91502e-07, 0, 5.70721e-15, -1.75153e-08, -0.587717, 1.91502e-07, -0.587717, 1.75153e-08, 9.37724e-08, 0.638768, 0.224315)
+
+[node name="2_nose_3" parent="model/walking/rig/Skeleton3D" index="19"]
+transform = Transform3D(-0.53442, -1.74136e-07, 0, 5.18966e-15, -1.5927e-08, -0.53442, 1.74136e-07, -0.53442, 1.5927e-08, 9.37724e-08, 0.638768, 0.224315)
+
+[node name="3_head" parent="model/walking/rig/Skeleton3D" index="20"]
+transform = Transform3D(-0.449144, -1.4635e-07, -6.54228e-14, 6.97844e-14, -1.33855e-08, -0.449144, 1.4635e-07, -0.449144, 1.33855e-08, 6.97328e-08, 0.685595, 0.0883718)
+
+[node name="3_nose_0" parent="model/walking/rig/Skeleton3D" index="21"]
+transform = Transform3D(-0.553682, 8.065e-14, -1.80412e-07, 8.60267e-14, 0.553682, -1.6501e-08, 1.80412e-07, -1.6501e-08, -0.553682, -1.79631e-05, 0.596526, 0.219769)
+
+[node name="3_nose_1" parent="model/walking/rig/Skeleton3D" index="22"]
+transform = Transform3D(-0.566479, -1.84582e-07, -8.25141e-14, 8.80151e-14, -1.68824e-08, -0.566479, 1.84582e-07, -0.566479, 1.68824e-08, -1.79284e-05, 0.596526, 0.219769)
+
+[node name="3_nose_2" parent="model/walking/rig/Skeleton3D" index="23"]
+transform = Transform3D(-0.576618, -1.87886e-07, -8.39909e-14, 8.95903e-14, -1.71845e-08, -0.576618, 1.87886e-07, -0.576618, 1.71845e-08, -1.79284e-05, 0.596526, 0.219769)
+
+[node name="3_nose_3" parent="model/walking/rig/Skeleton3D" index="24"]
+transform = Transform3D(-0.621574, -2.02534e-07, -9.05392e-14, 9.65752e-14, -1.85243e-08, -0.621574, 2.02534e-07, -0.621573, 1.85243e-08, -1.79631e-05, 0.596526, 0.219769)
+
+[node name="4_head" parent="model/walking/rig/Skeleton3D" index="25"]
+transform = Transform3D(-0.463512, -1.51031e-07, 0, 4.50108e-15, -1.38137e-08, -0.463512, 1.51031e-07, -0.463512, 1.38137e-08, 1.88942e-07, 0.685595, 0.0883718)
+
+[node name="4_nose_0" parent="model/walking/rig/Skeleton3D" index="26"]
+transform = Transform3D(-0.421038, 0, -1.37191e-07, 4.08863e-15, 0.421038, -1.25479e-08, 1.37191e-07, -1.25479e-08, -0.421038, -1.79589e-05, 0.649119, 0.219769)
+
+[node name="4_nose_1" parent="model/walking/rig/Skeleton3D" index="27"]
+transform = Transform3D(-0.430769, -1.40362e-07, 0, 4.18313e-15, -1.28379e-08, -0.430769, 1.40362e-07, -0.430769, 1.28379e-08, -1.79326e-05, 0.649119, 0.219769)
+
+[node name="4_nose_2" parent="model/walking/rig/Skeleton3D" index="28"]
+transform = Transform3D(-0.438479, -1.42874e-07, 0, 4.25799e-15, -1.30677e-08, -0.438479, 1.42874e-07, -0.438479, 1.30677e-08, -1.79326e-05, 0.649119, 0.219769)
+
+[node name="4_nose_3" parent="model/walking/rig/Skeleton3D" index="29"]
+transform = Transform3D(-0.472665, -1.54014e-07, 0, 4.58996e-15, -1.40865e-08, -0.472665, 1.54014e-07, -0.472665, 1.40865e-08, -1.79589e-05, 0.649119, 0.219769)
+
+[node name="prophead" parent="model/walking/rig/Skeleton3D" index="30"]
+transform = Transform3D(-0.463512, -1.51031e-07, 0, 4.50108e-15, -1.38137e-08, -0.463512, 1.51031e-07, -0.463512, 1.38137e-08, 1.88942e-07, 0.685595, 0.0883718)
+
+[node name="nose_0" parent="model/walking/rig/Skeleton3D" index="31"]
+transform = Transform3D(0.466497, -7.60021e-08, 7.60024e-08, 7.60017e-08, 0.466499, 1.39027e-08, -7.60021e-08, -1.39027e-08, 0.466499, 0.0120147, 0.626303, 0.219929)
+
+[node name="nose_1" parent="model/walking/rig/Skeleton3D" index="32"]
+transform = Transform3D(0.539995, -8.79762e-08, 8.79766e-08, 8.79761e-08, 0.539995, 1.60931e-08, -8.79766e-08, -1.60931e-08, 0.539995, 0.0120148, 0.626303, 0.219929)
+
+[node name="nose_2" parent="model/walking/rig/Skeleton3D" index="33"]
+transform = Transform3D(0.545299, -8.88402e-08, 8.88406e-08, 8.88402e-08, 0.545299, 1.62512e-08, -8.88406e-08, -1.62511e-08, 0.545299, 0.0120148, 0.623961, 0.222979)
+
+[node name="nose_3" parent="model/walking/rig/Skeleton3D" index="34"]
+transform = Transform3D(0.53442, -8.70678e-08, 8.70682e-08, 8.70678e-08, 0.53442, 1.5927e-08, -8.70682e-08, -1.59269e-08, 0.53442, 0.0120147, 0.623961, 0.222979)
+
 [node name="cam" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.97237, 0.233445, 0, -0.233445, 0.97237, 0, 0.715, 1.852)
 

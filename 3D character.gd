@@ -174,10 +174,10 @@ func get_ui(ui):
 		
 		face_f = ui[0]
 		face_f_id = ui[1]
-		face_f_lr = "left"#ui[2]
+		face_f_lr = ui[2]
 		set_facial_feture(face_f,face_f_id,face_f_lr)
-		face_f_lr = "right"
-		set_facial_feture(face_f,face_f_id,face_f_lr)
+
+
 	if ui[0] == "eye" and ui[2] == "left":
 		ent_e_r = true
 		eye_l_in_p = false

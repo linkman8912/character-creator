@@ -437,9 +437,6 @@ grow_vertical = 2
 [node name="y" parent="CanvasLayer/HBoxContainer/Node2D/mouth_ui/sliders" index="0"]
 value = 14.0
 
-[node name="eye_ui" parent="CanvasLayer/HBoxContainer/Node2D" index="8"]
-visible = true
-
 [node name="y" parent="CanvasLayer/HBoxContainer/Node2D/eye_ui/sliders" index="0"]
 offset_left = -100.667
 offset_top = -82.3219

@@ -58,32 +58,32 @@ text = "SKIN COLOR
 
 [node name="nose_ui" parent="." instance=ExtResource("1_3xbv4")]
 visible = false
-position = Vector2(448, 241)
+position = Vector2(1350, 764)
 scale = Vector2(0.435, 0.435)
 
 [node name="mouth_ui" parent="." instance=ExtResource("2_cnwgv")]
 visible = false
-position = Vector2(448, 241)
+position = Vector2(1350, 764)
 scale = Vector2(0.435, 0.435)
 
 [node name="eye_ui" parent="." instance=ExtResource("3_dvyc2")]
 visible = false
-position = Vector2(448, 241)
+position = Vector2(1350, 764)
 scale = Vector2(0.435, 0.435)
 
 [node name="eyebrow_ui" parent="." instance=ExtResource("5_624nt")]
 visible = false
-position = Vector2(429, 240)
+position = Vector2(1331, 763)
 scale = Vector2(0.435, 0.435)
 
 [node name="head_ui" parent="." instance=ExtResource("6_k67o0")]
 visible = false
-position = Vector2(448, 241)
+position = Vector2(1350, 764)
 scale = Vector2(0.435, 0.435)
 
 [node name="skincolor_ui" parent="." instance=ExtResource("7_qad2w")]
 visible = false
-position = Vector2(448, 241)
+position = Vector2(1350, 764)
 scale = Vector2(0.435, 0.435)
 
 [node name="Button" type="Button" parent="."]
